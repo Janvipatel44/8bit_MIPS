@@ -1,0 +1,5 @@
+set -tmpdir "E:/Nishi_3rdsem/LAB/xst/projnav.tmp"
+set -xsthdpdir "E:/Nishi_3rdsem/LAB/xst"
+elaborate
+-ifn progcount_im_block.prj
+-ifmt mixed

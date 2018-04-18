@@ -1,0 +1,107 @@
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/Lab1/microprocessor.xst" -ofn "E:/Nishi_3rdsem/Lab1/microprocessor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 microprocessor.ngc microprocessor.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o microprocessor_map.ncd microprocessor.ngd microprocessor.pcf 
+par -w -intstyle ise -ol high -mt off microprocessor_map.ncd microprocessor.ncd microprocessor.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml microprocessor.twx microprocessor.ncd -o microprocessor.twr microprocessor.pcf 
+netgen -intstyle ise -s 3  -pcf microprocessor.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim microprocessor.ncd microprocessor_timesim.v 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/Lab1/microprocessor.xst" -ofn "E:/Nishi_3rdsem/Lab1/microprocessor.syr" 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/Lab1/microprocessor.xst" -ofn "E:/Nishi_3rdsem/Lab1/microprocessor.syr" 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/Lab1/microprocessor.xst" -ofn "E:/Nishi_3rdsem/Lab1/microprocessor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 microprocessor.ngc microprocessor.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o microprocessor_map.ncd microprocessor.ngd microprocessor.pcf 
+par -w -intstyle ise -ol high -mt off microprocessor_map.ncd microprocessor.ncd microprocessor.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml microprocessor.twx microprocessor.ncd -o microprocessor.twr microprocessor.pcf 
+netgen -intstyle ise -s 3  -pcf microprocessor.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim microprocessor.ncd microprocessor_timesim.v 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/Lab1/microprocessor.xst" -ofn "E:/Nishi_3rdsem/Lab1/microprocessor.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim microprocessor.ngc microprocessor_synthesis.v 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/Lab1/microprocessor.xst" -ofn "E:/Nishi_3rdsem/Lab1/microprocessor.syr" 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/Lab1/microprocessor.xst" -ofn "E:/Nishi_3rdsem/Lab1/microprocessor.syr" 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/Lab1/microprocessor.xst" -ofn "E:/Nishi_3rdsem/Lab1/microprocessor.syr" 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/Lab1/microprocessor.xst" -ofn "E:/Nishi_3rdsem/Lab1/microprocessor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 microprocessor.ngc microprocessor.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o microprocessor_map.ncd microprocessor.ngd microprocessor.pcf 
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o microprocessor_map.ncd microprocessor.ngd microprocessor.pcf 
+par -w -intstyle ise -ol high -mt off microprocessor_map.ncd microprocessor.ncd microprocessor.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml microprocessor.twx microprocessor.ncd -o microprocessor.twr microprocessor.pcf 
+netgen -intstyle ise -s 3  -pcf microprocessor.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim microprocessor.ncd microprocessor_timesim.v 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/Lab1/microprocessor.xst" -ofn "E:/Nishi_3rdsem/Lab1/microprocessor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 microprocessor.ngc microprocessor.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o microprocessor_map.ncd microprocessor.ngd microprocessor.pcf 
+par -w -intstyle ise -ol high -mt off microprocessor_map.ncd microprocessor.ncd microprocessor.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml microprocessor.twx microprocessor.ncd -o microprocessor.twr microprocessor.pcf 
+netgen -intstyle ise -s 3  -pcf microprocessor.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim microprocessor.ncd microprocessor_timesim.v 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/Lab1/microprocessor.xst" -ofn "E:/Nishi_3rdsem/Lab1/microprocessor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 microprocessor.ngc microprocessor.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o microprocessor_map.ncd microprocessor.ngd microprocessor.pcf 
+par -w -intstyle ise -ol high -mt off microprocessor_map.ncd microprocessor.ncd microprocessor.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml microprocessor.twx microprocessor.ncd -o microprocessor.twr microprocessor.pcf 
+netgen -intstyle ise -s 3  -pcf microprocessor.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim microprocessor.ncd microprocessor_timesim.v 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/Lab1/microprocessor.xst" -ofn "E:/Nishi_3rdsem/Lab1/microprocessor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 microprocessor.ngc microprocessor.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o microprocessor_map.ncd microprocessor.ngd microprocessor.pcf 
+par -w -intstyle ise -ol high -mt off microprocessor_map.ncd microprocessor.ncd microprocessor.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml microprocessor.twx microprocessor.ncd -o microprocessor.twr microprocessor.pcf 
+netgen -intstyle ise -s 3  -pcf microprocessor.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim microprocessor.ncd microprocessor_timesim.v 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/Lab1/microprocessor.xst" -ofn "E:/Nishi_3rdsem/Lab1/microprocessor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 microprocessor.ngc microprocessor.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o microprocessor_map.ncd microprocessor.ngd microprocessor.pcf 
+par -w -intstyle ise -ol high -mt off microprocessor_map.ncd microprocessor.ncd microprocessor.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml microprocessor.twx microprocessor.ncd -o microprocessor.twr microprocessor.pcf 
+netgen -intstyle ise -s 3  -pcf microprocessor.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim microprocessor.ncd microprocessor_timesim.v 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/Lab1/microprocessor.xst" -ofn "E:/Nishi_3rdsem/Lab1/microprocessor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 microprocessor.ngc microprocessor.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o microprocessor_map.ncd microprocessor.ngd microprocessor.pcf 
+par -w -intstyle ise -ol high -mt off microprocessor_map.ncd microprocessor.ncd microprocessor.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml microprocessor.twx microprocessor.ncd -o microprocessor.twr microprocessor.pcf 
+netgen -intstyle ise -s 3  -pcf microprocessor.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim microprocessor.ncd microprocessor_timesim.v 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/Lab1/microprocessor.xst" -ofn "E:/Nishi_3rdsem/Lab1/microprocessor.syr" 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/Lab1/microprocessor.xst" -ofn "E:/Nishi_3rdsem/Lab1/microprocessor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 microprocessor.ngc microprocessor.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o microprocessor_map.ncd microprocessor.ngd microprocessor.pcf 
+par -w -intstyle ise -ol high -mt off microprocessor_map.ncd microprocessor.ncd microprocessor.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml microprocessor.twx microprocessor.ncd -o microprocessor.twr microprocessor.pcf 
+netgen -intstyle ise -s 3  -pcf microprocessor.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim microprocessor.ncd microprocessor_timesim.v 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/Lab1/microprocessor.xst" -ofn "E:/Nishi_3rdsem/Lab1/microprocessor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 microprocessor.ngc microprocessor.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o microprocessor_map.ncd microprocessor.ngd microprocessor.pcf 
+par -w -intstyle ise -ol high -mt off microprocessor_map.ncd microprocessor.ncd microprocessor.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml microprocessor.twx microprocessor.ncd -o microprocessor.twr microprocessor.pcf 
+netgen -intstyle ise -s 3  -pcf microprocessor.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim microprocessor.ncd microprocessor_timesim.v 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/Lab1/microprocessor.xst" -ofn "E:/Nishi_3rdsem/Lab1/microprocessor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 microprocessor.ngc microprocessor.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o microprocessor_map.ncd microprocessor.ngd microprocessor.pcf 
+par -w -intstyle ise -ol high -mt off microprocessor_map.ncd microprocessor.ncd microprocessor.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml microprocessor.twx microprocessor.ncd -o microprocessor.twr microprocessor.pcf 
+netgen -intstyle ise -s 3  -pcf microprocessor.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim microprocessor.ncd microprocessor_timesim.v 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/Lab1/microprocessor.xst" -ofn "E:/Nishi_3rdsem/Lab1/microprocessor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 microprocessor.ngc microprocessor.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o microprocessor_map.ncd microprocessor.ngd microprocessor.pcf 
+par -w -intstyle ise -ol high -mt off microprocessor_map.ncd microprocessor.ncd microprocessor.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml microprocessor.twx microprocessor.ncd -o microprocessor.twr microprocessor.pcf 
+netgen -intstyle ise -s 3  -pcf microprocessor.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim microprocessor.ncd microprocessor_timesim.v 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/LAB/microprocessor.xst" -ofn "E:/Nishi_3rdsem/LAB/microprocessor.syr" 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/LAB/microprocessor.xst" -ofn "E:/Nishi_3rdsem/LAB/microprocessor.syr" 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/LAB/microprocessor.xst" -ofn "E:/Nishi_3rdsem/LAB/microprocessor.syr" 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/LAB/microprocessor.xst" -ofn "E:/Nishi_3rdsem/LAB/microprocessor.syr" 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/LAB/microprocessor.xst" -ofn "E:/Nishi_3rdsem/LAB/microprocessor.syr" 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/LAB/microprocessor.xst" -ofn "E:/Nishi_3rdsem/LAB/microprocessor.syr" 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/LAB/microprocessor.xst" -ofn "E:/Nishi_3rdsem/LAB/microprocessor.syr" 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/LAB/microprocessor.xst" -ofn "E:/Nishi_3rdsem/LAB/microprocessor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-5 microprocessor.ngc microprocessor.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o microprocessor_map.ncd microprocessor.ngd microprocessor.pcf 
+par -w -intstyle ise -ol high -t 1 microprocessor_map.ncd microprocessor.ncd microprocessor.pcf 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/LAB/microprocessor.xst" -ofn "E:/Nishi_3rdsem/LAB/microprocessor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-5 microprocessor.ngc microprocessor.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o microprocessor_map.ncd microprocessor.ngd microprocessor.pcf 
+par -w -intstyle ise -ol high -t 1 microprocessor_map.ncd microprocessor.ncd microprocessor.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml microprocessor.twx microprocessor.ncd -o microprocessor.twr microprocessor.pcf 
+netgen -intstyle ise -s 5  -pcf microprocessor.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim microprocessor.ncd microprocessor_timesim.v 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/LAB/microprocessor.xst" -ofn "E:/Nishi_3rdsem/LAB/microprocessor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-5 microprocessor.ngc microprocessor.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o microprocessor_map.ncd microprocessor.ngd microprocessor.pcf 
+par -w -intstyle ise -ol high -t 1 microprocessor_map.ncd microprocessor.ncd microprocessor.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml microprocessor.twx microprocessor.ncd -o microprocessor.twr microprocessor.pcf 
+netgen -intstyle ise -s 5  -pcf microprocessor.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim microprocessor.ncd microprocessor_timesim.v 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/LAB/microprocessor.xst" -ofn "E:/Nishi_3rdsem/LAB/microprocessor.syr" 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/LAB/microprocessor.xst" -ofn "E:/Nishi_3rdsem/LAB/microprocessor.syr" 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/LAB/microprocessor.xst" -ofn "E:/Nishi_3rdsem/LAB/microprocessor.syr" 

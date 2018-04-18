@@ -1,0 +1,382 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: dependency_check_block.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "dependency_check_block.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "dependency_check_block"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : dependency_check_block
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "dependency_check_block.v" in library work
+Module <dependency_check_block> compiled
+No errors in compilation
+Analysis of file <"dependency_check_block.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <dependency_check_block> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <dependency_check_block>.
+Module <dependency_check_block> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <dependency_check_block>.
+    Related source file is "dependency_check_block.v".
+    Found 5-bit register for signal <imm<4:0>>.
+    Found 5-bit register for signal <op_dec>.
+    Found 5-bit comparator equal for signal <comp1$cmp_eq0000> created at line 51.
+    Found 5-bit comparator equal for signal <comp2$cmp_eq0000> created at line 52.
+    Found 5-bit comparator equal for signal <comp3$cmp_eq0000> created at line 53.
+    Found 5-bit comparator equal for signal <comp4$cmp_eq0000> created at line 54.
+    Found 5-bit comparator equal for signal <comp5$cmp_eq0000> created at line 55.
+    Found 5-bit comparator equal for signal <comp6$cmp_eq0000> created at line 56.
+    Found 1-bit register for signal <Q1>.
+    Found 1-bit register for signal <Q2>.
+    Found 1-bit register for signal <Q3>.
+    Found 1-bit register for signal <Q4>.
+    Found 5-bit register for signal <r1>.
+    Found 5-bit register for signal <reg1>.
+    Found 5-bit register for signal <reg2>.
+    Found 5-bit register for signal <reg3>.
+    Found 5-bit register for signal <reg4>.
+    Found 5-bit register for signal <reg5>.
+    Summary:
+	inferred  44 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+Unit <dependency_check_block> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 16
+ 1-bit register                                        : 9
+ 5-bit register                                        : 7
+# Comparators                                          : 6
+ 5-bit comparator equal                                : 6
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 44
+ Flip-Flops                                            : 44
+# Comparators                                          : 6
+ 5-bit comparator equal                                : 6
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <dependency_check_block> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block dependency_check_block, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 44
+ Flip-Flops                                            : 44
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : dependency_check_block.ngr
+Top Level Output File Name         : dependency_check_block
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 48
+
+Cell Usage :
+# BELS                             : 46
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 4
+#      LUT3                        : 5
+#      LUT4                        : 35
+# FlipFlops/Latches                : 44
+#      FDR                         : 44
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 47
+#      IBUF                        : 21
+#      OBUF                        : 26
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                       28  out of   4656     0%  
+ Number of Slice Flip Flops:             33  out of   9312     0%  
+ Number of 4 input LUTs:                 45  out of   9312     0%  
+ Number of IOs:                          48
+ Number of bonded IOBs:                  48  out of    232    20%  
+    IOB Flip Flops:                      11
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 44    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 2.303ns (Maximum Frequency: 434.235MHz)
+   Minimum input arrival time before clock: 4.218ns
+   Maximum output required time after clock: 7.398ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.303ns (frequency: 434.235MHz)
+  Total number of paths / destination ports: 33 / 33
+-------------------------------------------------------------------------
+Delay:               2.303ns (Levels of Logic = 1)
+  Source:            Q4 (FF)
+  Destination:       Q4 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: Q4 to Q4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             16   0.514   0.909  Q4 (Q4)
+     LUT3:I2->O            1   0.612   0.000  temp12 (temp1)
+     FDR:D                     0.268          Q4
+    ----------------------------------------
+    Total                      2.303ns (1.394ns logic, 0.909ns route)
+                                       (60.5% logic, 39.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 156 / 73
+-------------------------------------------------------------------------
+Offset:              4.218ns (Levels of Logic = 3)
+  Source:            ins<17> (PAD)
+  Destination:       reg1_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: ins<17> to reg1_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.106   0.603  ins_17_IBUF (ins_17_IBUF)
+     LUT4:I0->O           15   0.612   1.016  nor1_or0000_SW1 (N6)
+     LUT4:I0->O            1   0.612   0.000  temp6<9>1 (temp6<9>)
+     FDR:D                     0.268          reg1_4
+    ----------------------------------------
+    Total                      4.218ns (2.598ns logic, 1.620ns route)
+                                       (61.6% logic, 38.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 140 / 23
+-------------------------------------------------------------------------
+Offset:              7.398ns (Levels of Logic = 4)
+  Source:            reg2_2 (FF)
+  Destination:       mux_sel_a<1> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: reg2_2 to mux_sel_a<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.514   0.603  reg2_2 (reg2_2)
+     LUT4:I0->O            1   0.612   0.387  comp4562 (comp4562)
+     LUT4:I2->O            2   0.612   0.532  comp4578 (comp4)
+     LUT3:I0->O            1   0.612   0.357  mux_sel_b<1>1 (mux_sel_b_1_OBUF)
+     OBUF:I->O                 3.169          mux_sel_b_1_OBUF (mux_sel_b<1>)
+    ----------------------------------------
+    Total                      7.398ns (5.519ns logic, 1.879ns route)
+                                       (74.6% logic, 25.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.36 secs
+ 
+--> 
+
+Total memory usage is 305784 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

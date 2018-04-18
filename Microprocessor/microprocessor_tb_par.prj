@@ -1,0 +1,2 @@
+verilog work "netgen/par/microprocessor_timesim.v"
+verilog work "microprocessor_tb.v"

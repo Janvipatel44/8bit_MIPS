@@ -1,0 +1,2 @@
+verilog isim_temp "netgen/par/microprocessor_timesim.v"
+verilog isim_temp "microprocessor_tb.v"

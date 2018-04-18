@@ -1,0 +1,2 @@
+verilog work "ipcore_dir/procount_im_block.v"
+verilog work "progcount_im_block.v"

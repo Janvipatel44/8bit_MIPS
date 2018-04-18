@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/LAB/Data_memory.xst" -ofn "E:/Nishi_3rdsem/LAB/Data_memory.syr" 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/LAB/Data_memory.xst" -ofn "E:/Nishi_3rdsem/LAB/Data_memory.syr" 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/LAB/Data_memory.xst" -ofn "E:/Nishi_3rdsem/LAB/Data_memory.syr" 

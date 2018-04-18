@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/LAB/progcount_im_block.xst" -ofn "E:/Nishi_3rdsem/LAB/progcount_im_block.syr" 

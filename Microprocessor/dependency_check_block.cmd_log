@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/LAB/dependency_check_block.xst" -ofn "E:/Nishi_3rdsem/LAB/dependency_check_block.syr" 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/LAB/dependency_check_block.xst" -ofn "E:/Nishi_3rdsem/LAB/dependency_check_block.syr" 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/LAB/dependency_check_block.xst" -ofn "E:/Nishi_3rdsem/LAB/dependency_check_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s100e-vq100-5 dependency_check_block.ngc dependency_check_block.ngd  
+map -intstyle ise -p xc3s100e-vq100-5 -cm area -ir off -pr off -c 100 -o dependency_check_block_map.ncd dependency_check_block.ngd dependency_check_block.pcf 
+par -w -intstyle ise -ol high -t 1 dependency_check_block_map.ncd dependency_check_block.ncd dependency_check_block.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml dependency_check_block.twx dependency_check_block.ncd -o dependency_check_block.twr dependency_check_block.pcf 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/LAB/dependency_check_block.xst" -ofn "E:/Nishi_3rdsem/LAB/dependency_check_block.syr" 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/LAB/dependency_check_block.xst" -ofn "E:/Nishi_3rdsem/LAB/dependency_check_block.syr" 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/LAB/dependency_check_block.xst" -ofn "E:/Nishi_3rdsem/LAB/dependency_check_block.syr" 
+xst -intstyle ise -ifn "E:/Nishi_3rdsem/LAB/dependency_check_block.xst" -ofn "E:/Nishi_3rdsem/LAB/dependency_check_block.syr" 

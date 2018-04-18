@@ -1,0 +1,141 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Oct 28 15:45:12 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "B8" LEVEL 1;
+COMP "data_in<0>" LOCATE = SITE "G18" LEVEL 1;
+COMP "data_in<1>" LOCATE = SITE "H18" LEVEL 1;
+COMP "data_in<2>" LOCATE = SITE "K18" LEVEL 1;
+COMP "data_in<3>" LOCATE = SITE "K17" LEVEL 1;
+COMP "data_in<4>" LOCATE = SITE "L14" LEVEL 1;
+COMP "data_in<5>" LOCATE = SITE "L13" LEVEL 1;
+COMP "data_in<6>" LOCATE = SITE "N17" LEVEL 1;
+COMP "data_in<7>" LOCATE = SITE "R17" LEVEL 1;
+COMP "reset" LOCATE = SITE "D18" LEVEL 1;
+PIN reset_pin<0> = BEL "reset" PINNAME PAD;
+PIN "reset_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "interrupt" LOCATE = SITE "B18" LEVEL 1;
+PIN interrupt_pin<0> = BEL "interrupt" PINNAME PAD;
+PIN "interrupt_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "data_out<0>" LOCATE = SITE "J14" LEVEL 1;
+COMP "data_out<1>" LOCATE = SITE "J15" LEVEL 1;
+COMP "data_out<2>" LOCATE = SITE "K15" LEVEL 1;
+COMP "data_out<3>" LOCATE = SITE "K14" LEVEL 1;
+COMP "data_out<4>" LOCATE = SITE "E17" LEVEL 1;
+COMP "data_out<5>" LOCATE = SITE "P15" LEVEL 1;
+COMP "data_out<6>" LOCATE = SITE "F4" LEVEL 1;
+COMP "data_out<7>" LOCATE = SITE "R4" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+PIN
+        dm/Data_memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A_pins<10>
+        = BEL
+        "dm/Data_memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A"
+        PINNAME CLKA;
+PIN
+        dm/Data_memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B_pins<10>
+        = BEL
+        "dm/Data_memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B"
+        PINNAME CLKB;
+PIN
+        pi/progcount_im_block/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A_pins<10>
+        = BEL
+        "pi/progcount_im_block/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A"
+        PINNAME CLKA;
+PIN
+        pi/progcount_im_block/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B_pins<10>
+        = BEL
+        "pi/progcount_im_block/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B"
+        PINNAME CLKB;
+TIMEGRP clk = BEL "mi/flag_temp_1" BEL "mi/flag_temp_0" BEL
+        "mi/mem_mux_sel_ex" BEL "mi/mem_rw_ex" BEL "mi/RW_ex_4" BEL
+        "mi/RW_ex_3" BEL "mi/RW_ex_2" BEL "mi/RW_ex_1" BEL "mi/RW_ex_0" BEL
+        "mi/mem_en_ex" BEL "mi/B_Bypass_7" BEL "mi/B_Bypass_6" BEL
+        "mi/B_Bypass_5" BEL "mi/B_Bypass_4" BEL "mi/B_Bypass_3" BEL
+        "mi/B_Bypass_2" BEL "mi/B_Bypass_1" BEL "mi/B_Bypass_0" BEL
+        "mi/ans_ex_7" BEL "mi/ans_ex_6" BEL "mi/ans_ex_5" BEL "mi/ans_ex_4"
+        BEL "mi/ans_ex_3" BEL "db/reg4_4" BEL "db/reg4_3" BEL "db/reg4_2" BEL
+        "db/reg4_1" BEL "db/reg4_0" BEL "db/reg3_4" BEL "db/reg3_3" BEL
+        "db/reg3_2" BEL "db/reg3_1" BEL "db/reg3_0" BEL "db/reg5_4" BEL
+        "db/reg5_3" BEL "db/reg5_2" BEL "db/reg5_1" BEL "db/reg5_0" BEL
+        "db/r1_4" BEL "db/r1_3" BEL "db/r1_2" BEL "db/r1_1" BEL "db/r1_0" BEL
+        "db/reg1_4" BEL "db/reg1_3" BEL "db/reg1_2" BEL "db/reg1_1" BEL
+        "db/reg1_0" BEL "db/op_dec_4" BEL "db/op_dec_3" BEL "db/op_dec_2" BEL
+        "db/op_dec_1" BEL "db/op_dec_0" BEL "db/imm_1" BEL "db/imm_2" BEL
+        "db/imm_0" BEL "db/imm_4" BEL "db/Q4" BEL "db/imm_3" BEL "db/Q2" BEL
+        "db/Q1" BEL "db/Q3" BEL "sb/Q_temp2" BEL "sb/stall_pm" BEL
+        "sb/Q_temp3" BEL "sb/Q_temp1" BEL "rb/Mram_membyte_ren16.SLICEM_F" BEL
+        "rb/Mram_membyte_ren16.SLICEM_G" BEL "rb/Mram_membyte_ren15.SLICEM_F"
+        BEL "rb/Mram_membyte_ren15.SLICEM_G" BEL
+        "rb/Mram_membyte_ren14.SLICEM_F" BEL "rb/Mram_membyte_ren14.SLICEM_G"
+        BEL "rb/Mram_membyte_ren13.SLICEM_F" BEL
+        "rb/Mram_membyte_ren13.SLICEM_G" BEL "rb/Mram_membyte_ren12.SLICEM_F"
+        BEL "rb/Mram_membyte_ren12.SLICEM_G" BEL
+        "rb/Mram_membyte_ren10.SLICEM_F" BEL "rb/Mram_membyte_ren10.SLICEM_G"
+        BEL "rb/Mram_membyte_ren9.SLICEM_F" BEL
+        "rb/Mram_membyte_ren9.SLICEM_G" BEL "rb/Mram_membyte_ren11.SLICEM_F"
+        BEL "rb/Mram_membyte_ren11.SLICEM_G" BEL
+        "rb/Mram_membyte_ren7.SLICEM_F" BEL "rb/Mram_membyte_ren7.SLICEM_G"
+        BEL "rb/Mram_membyte_ren6.SLICEM_F" BEL
+        "rb/Mram_membyte_ren6.SLICEM_G" BEL "rb/Mram_membyte_ren8.SLICEM_F"
+        BEL "rb/Mram_membyte_ren8.SLICEM_G" BEL
+        "rb/Mram_membyte_ren4.SLICEM_F" BEL "rb/Mram_membyte_ren4.SLICEM_G"
+        BEL "rb/Mram_membyte_ren3.SLICEM_F" BEL
+        "rb/Mram_membyte_ren3.SLICEM_G" BEL "rb/Mram_membyte_ren5.SLICEM_F"
+        BEL "rb/Mram_membyte_ren5.SLICEM_G" BEL
+        "rb/Mram_membyte_ren2.SLICEM_F" BEL "rb/Mram_membyte_ren2.SLICEM_G"
+        BEL "rb/Mram_membyte_ren1.SLICEM_F" BEL
+        "rb/Mram_membyte_ren1.SLICEM_G" BEL "rb/Mram_membyte16.SLICEM_F" BEL
+        "rb/Mram_membyte16.SLICEM_G" BEL "rb/Mram_membyte15.SLICEM_F" BEL
+        "rb/Mram_membyte15.SLICEM_G" BEL "rb/Mram_membyte14.SLICEM_F" BEL
+        "rb/Mram_membyte14.SLICEM_G" BEL "rb/Mram_membyte13.SLICEM_F" BEL
+        "rb/Mram_membyte13.SLICEM_G" BEL "rb/Mram_membyte12.SLICEM_F" BEL
+        "rb/Mram_membyte12.SLICEM_G" BEL "rb/Mram_membyte11.SLICEM_F" BEL
+        "rb/Mram_membyte11.SLICEM_G" BEL "rb/Mram_membyte9.SLICEM_F" BEL
+        "rb/Mram_membyte9.SLICEM_G" BEL "rb/Mram_membyte8.SLICEM_F" BEL
+        "rb/Mram_membyte8.SLICEM_G" BEL "rb/Mram_membyte10.SLICEM_F" BEL
+        "rb/Mram_membyte10.SLICEM_G" BEL "rb/Mram_membyte6.SLICEM_F" BEL
+        "rb/Mram_membyte6.SLICEM_G" BEL "rb/Mram_membyte5.SLICEM_F" BEL
+        "rb/Mram_membyte5.SLICEM_G" BEL "rb/Mram_membyte7.SLICEM_F" BEL
+        "rb/Mram_membyte7.SLICEM_G" BEL "rb/Mram_membyte3.SLICEM_F" BEL
+        "rb/Mram_membyte3.SLICEM_G" BEL "rb/Mram_membyte2.SLICEM_F" BEL
+        "rb/Mram_membyte2.SLICEM_G" BEL "rb/Mram_membyte4.SLICEM_F" BEL
+        "rb/Mram_membyte4.SLICEM_G" BEL "rb/Mram_membyte1.SLICEM_F" BEL
+        "rb/Mram_membyte1.SLICEM_G" BEL "rb/reg_B_7" BEL "rb/reg_B_6" BEL
+        "rb/reg_B_5" BEL "rb/reg_B_4" BEL "rb/reg_B_3" BEL "rb/reg_B_2" BEL
+        "rb/reg_B_1" BEL "rb/reg_B_0" BEL "rb/reg_A_7" BEL "rb/reg_A_6" BEL
+        "rb/reg_A_5" BEL "rb/reg_A_4" BEL "rb/reg_A_3" BEL "rb/reg_A_2" BEL
+        "rb/reg_A_1" BEL "rb/reg_A_0" BEL "jb/out_reg1" BEL "wb/ans_wb_7" BEL
+        "wb/ans_wb_6" BEL "wb/ans_wb_5" BEL "wb/ans_wb_4" BEL "wb/ans_wb_3"
+        BEL "wb/ans_wb_2" BEL "wb/ans_wb_1" BEL "wb/ans_wb_0" BEL
+        "dm/mem_mux_sel_dm" BEL "dm/ans_reg_7" BEL "dm/ans_reg_6" BEL
+        "dm/ans_reg_5" BEL "dm/ans_reg_4" BEL "dm/ans_reg_3" BEL
+        "dm/ans_reg_2" BEL "dm/ans_reg_1" BEL "dm/ans_reg_0" BEL
+        "pi/next_address_7" BEL "pi/next_address_6" BEL "pi/next_address_5"
+        BEL "pi/next_address_4" BEL "pi/next_address_3" BEL
+        "pi/next_address_2" BEL "pi/next_address_1" BEL "pi/next_address_0"
+        BEL "pi/reg1_14" BEL "pi/reg1_13" BEL "pi/reg1_12" BEL "pi/reg1_11"
+        BEL "pi/reg1_10" BEL "pi/reg1_9" BEL "pi/reg1_8" BEL "pi/reg1_7" BEL
+        "pi/reg1_6" BEL "pi/reg1_5" BEL "pi/address_hold_7" BEL
+        "pi/address_hold_6" BEL "pi/address_hold_5" BEL "pi/address_hold_4"
+        BEL "pi/address_hold_3" BEL "pi/address_hold_2" BEL
+        "pi/address_hold_1" BEL "pi/address_hold_0" BEL "mi/ans_ex_2" BEL
+        "mi/ans_ex_1" BEL "mi/ans_ex_0" BEL "mi/data_out_7" BEL
+        "mi/data_out_6" BEL "mi/data_out_5" BEL "mi/data_out_4" BEL
+        "mi/data_out_3" BEL "mi/data_out_2" BEL "mi/data_out_1" BEL
+        "mi/data_out_0" BEL "jb/out_reg2_7" BEL "jb/out_reg2_6" BEL
+        "jb/out_reg2_5" BEL "jb/out_reg2_4" BEL "jb/out_reg2_3" BEL
+        "jb/out_reg2_2" BEL "jb/out_reg2_1" BEL "jb/out_reg2_0" BEL
+        "jb/out_reg3_1" BEL "jb/out_reg3_0" BEL "db/reg3_3_1" BEL
+        "db/reg3_2_1" BEL "db/reg3_1_1" BEL "db/reg3_0_1" PIN
+        "dm/Data_memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A_pins<10>"
+        PIN
+        "dm/Data_memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B_pins<10>"
+        PIN
+        "pi/progcount_im_block/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A_pins<10>"
+        PIN
+        "pi/progcount_im_block/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B_pins<10>"
+        BEL "clk_BUFGP/BUFG.GCLKMUX" BEL "clk_BUFGP/BUFG";
+TS_clock = PERIOD TIMEGRP "clk" 1000 ns HIGH 50% INPUT_JITTER 0.05 ns;
+SCHEMATIC END;
+
